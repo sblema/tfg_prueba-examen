@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="http://getbootstrap.com/docs-assets/ico/favicon.png">
+
+    <title>plantilla prueba examen</title>
+<!--
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+prueba1
+-->
+         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+<style>
+.participateShow-questionText {
+    background: none repeat scroll 0 0 #869CA8;
+    color: #ffffff !important;
+    font-family: Arial !important;
+    font-size: 21 !important;
+    border-radius: 5px 5px 5px 5px;
+    font-size: 21px;
+    line-height: 1.4em;
+    margin-bottom: 10px;
+    min-height: 25px;
+    padding: 14px 22px;
+    color: #FFFFFF;
+}
+.recuadro{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px 5px 5px 5px;
+    color: #808080;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 1.5em;
+    min-height: 45px;
+    padding: 6px 6px 6px 6px;
+}
+ .recuadro:hover, .recuadro:active, .recuadro:focus{
+    background: #b0c2d0;
+    color:#fff;
+}
+.recuadro img{
+   max-width: 100% ;
+}
+</style>
+
+</head>
+<body>
+
+	<div class="row" style="background: #2e3e4a;padding:5px;text-alig:center;">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+                        <img src="img/logo.png"  
+					style="width: 30%;float: right;" 
+					class="img-responsive center-block" />
+		</div>
+	</div>
+
+
+	<div class="row" style="background:#fff;/*padding:25px;*/text-alig:center;height:auto;">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 participateShow-questionText" id="pregunta">
+                        
+		</div>
+	</div>
+	<div class="row" style="background: #fff;/*padding:5px;*/text-alig:center;">
+	  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="padding-right:0px;">
+            <div class="recuadro" id="recuadro1"  onclick='siguientePregunta(document.getElementById("respuesta1").value);'>
+	      <input type="radio" name="respuesta1" style="display:none;" value="" id="respuesta1" ><span id="respuesta1-texto"></span>
+	    </div>
+	  </div>
+
+
+	  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="padding-right:0px;">
+            <div class="recuadro" id="recuadro2" 
+            onclick='siguientePregunta(document.getElementById("respuesta2").value);'>
+	      <input type="radio" name="respuesta2" style="display:none;" value="" id="respuesta2"><span id="respuesta2-texto"></span>
+	    </div>
+	  </div>
+	</div>
+	<div class="row" style="background: #fff;padding:5px;text-alig:center;">
+	  	<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" ></div>
+	</div>
+</body>
+</html>
